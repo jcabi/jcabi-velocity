@@ -38,7 +38,7 @@
 
 Primitive Wrapper for Apache Velocity
 
-  {{{./apidocs/com/jcabi/velocity/VelocityPage.html}<<<VelocityPage>>>}}
+  {{{./apidocs-${project.version}/com/jcabi/velocity/VelocityPage.html}<<<VelocityPage>>>}}
   is a convenient builder/wrapper around {{{http://velocity.apache.org/}Apache Velocity}}:
 
 +--
