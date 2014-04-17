@@ -107,7 +107,7 @@ public final class VelocityPage {
      */
     public VelocityPage set(@NotNull final Map<String, Object> args) {
         synchronized (this.context) {
-            for (Map.Entry<String, Object> entry : args.entrySet()) {
+            for (final Map.Entry<String, Object> entry : args.entrySet()) {
                 this.context.put(entry.getKey(), entry.getValue());
             }
         }
