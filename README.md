@@ -1,8 +1,12 @@
-<img src="http://img.jcabi.com/logo-square.png" width="64px" height="64px" />
- 
-[![Build Status](https://travis-ci.org/jcabi/jcabi-velocity.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-velocity)
+<img src="http://img.jcabi.com/logo-square.svg" width="64px" height="64px" />
 
-More details are here: [www.jcabi.com/jcabi-velocity](http://www.jcabi.com/jcabi-velocity/index.html)
+[![Made By Teamed.io](http://img.teamed.io/btn.svg)](http://www.teamed.io)
+[![DevOps By Rultor.com](http://www.rultor.com/b/jcabi/jcabi-velocity)](http://www.rultor.com/p/jcabi/jcabi-velocity)
+
+[![Build Status](https://travis-ci.org/jcabi/jcabi-velocity.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-velocity)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity)
+
+More details are here: [velocity.jcabi.com](http://velocity.jcabi.com/index.html)
 
 `VelocityPage` is a convenient builder/wrapper around [Apache Velocity](http://velocity.apache.org/):
 
@@ -19,21 +23,10 @@ public class Main {
 }
 ```
 
-You need just this dependency:
-
-```xml
-<dependency>
-  <groupId>com.jcabi</groupId>
-  <artifactId>jcabi-velocity</artifactId>
-  <version>0.8</version>
-</dependency>
-```
-
 ## Questions?
 
 If you have any questions about the framework, or something doesn't work as expected,
 please [submit an issue here](https://github.com/yegor256/jcabi/issues/new).
-If you want to discuss, please use our [Google Group](https://groups.google.com/forum/#!forum/jcabi).
 
 ## How to contribute?
 
