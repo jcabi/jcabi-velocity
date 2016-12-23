@@ -4,7 +4,7 @@
 [![DevOps By Rultor.com](http://www.rultor.com/b/jcabi/jcabi-velocity)](http://www.rultor.com/p/jcabi/jcabi-velocity)
 
 [![Build Status](https://travis-ci.org/jcabi/jcabi-velocity.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-velocity)
-[![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-velocity)](http://www.0pdd.com/p?name=teamed/jcabi/jcabi-velocity)
+[![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-velocity)](http://www.0pdd.com/p?name=jcabi/jcabi-velocity)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity)
 [![Javadoc](https://javadoc-emblem.rhcloud.com/doc/com.jcabi/jcabi-velocity/badge.svg)](http://www.javadoc.io/doc/com.jcabi/jcabi-velocity)
 
