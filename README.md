@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/jcabi/jcabi-velocity.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-velocity)
 [![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-velocity)](http://www.0pdd.com/p?name=jcabi/jcabi-velocity)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity)
-[![Javadoc](https://javadoc-emblem.rhcloud.com/doc/com.jcabi/jcabi-velocity/badge.svg)](http://www.javadoc.io/doc/com.jcabi/jcabi-velocity)
+[![Javadoc](https://javadoc.io/badge/com.jcabi/jcabi-velocity.svg)](http://www.javadoc.io/doc/com.jcabi/jcabi-velocity)
 
 More details are here: [velocity.jcabi.com](http://velocity.jcabi.com/index.html)
 
