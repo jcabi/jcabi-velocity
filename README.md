@@ -2,16 +2,16 @@
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![Managed by Zerocracy](https://www.0crat.com/badge/C3RUBL5H9.svg)](https://www.0crat.com/p/C3RUBL5H9)
-[![DevOps By Rultor.com](http://www.rultor.com/b/jcabi/jcabi-velocity)](http://www.rultor.com/p/jcabi/jcabi-velocity)
+[![DevOps By Rultor.com](https://www.rultor.com/b/jcabi/jcabi-velocity)](https://www.rultor.com/p/jcabi/jcabi-velocity)
 
-[![Build Status](https://travis-ci.org/jcabi/jcabi-velocity.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-velocity)
-[![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-velocity)](http://www.0pdd.com/p?name=jcabi/jcabi-velocity)
+[![mvn](https://github.com/jcabi/jcabi-velocity/actions/workflows/mvn.yml/badge.svg)](https://github.com/jcabi/jcabi-velocity/actions/workflows/mvn.yml)
+[![PDD status](https://www.0pdd.com/svg?name=jcabi/jcabi-velocity)](https://www.0pdd.com/p?name=jcabi/jcabi-velocity)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-velocity)
-[![Javadoc](https://javadoc.io/badge/com.jcabi/jcabi-velocity.svg)](http://www.javadoc.io/doc/com.jcabi/jcabi-velocity)
+[![Javadoc](https://javadoc.io/badge/com.jcabi/jcabi-velocity.svg)](https://www.javadoc.io/doc/com.jcabi/jcabi-velocity)
 
-More details are here: [velocity.jcabi.com](http://velocity.jcabi.com/index.html)
+More details are here: [velocity.jcabi.com](https://velocity.jcabi.com/index.html)
 
-`VelocityPage` is a convenient builder/wrapper around [Apache Velocity](http://velocity.apache.org/):
+`VelocityPage` is a convenient builder/wrapper around [Apache Velocity](https://velocity.apache.org/):
 
 ```java
 import com.jcabi.velocity.VelocityPage;
