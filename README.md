@@ -26,11 +26,6 @@ public class Main {
 }
 ```
 
-## Questions?
-
-If you have any questions about the framework, or something doesn't work as expected,
-please [submit an issue here](https://github.com/yegor256/jcabi/issues/new).
-
 ## How to contribute?
 
 Fork the repository, make changes, submit a pull request.
