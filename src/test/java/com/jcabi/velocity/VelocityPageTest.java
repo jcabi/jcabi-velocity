@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2012-2017, jcabi.com
+/*
+ * Copyright (c) 2012-2023, jcabi.com
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -31,21 +31,17 @@ package com.jcabi.velocity;
 
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Test case for {@link VelocityPage}.
- * @author Yegor Bugayenko (yegor@tpc2.com)
- * @version $Id$
+ *
+ * @since 0.0.1
  */
-public final class VelocityPageTest {
+final class VelocityPageTest {
 
-    /**
-     * VelocityPage can format Velocity template.
-     * @throws Exception If there is some problem inside
-     */
     @Test
-    public void formatsVelocityTemplate() throws Exception {
+    void formatsVelocityTemplate() {
         MatcherAssert.assertThat(
             new VelocityPage("com/jcabi/velocity/text.vm")
                 .set("xname", "\u0412\u0430\u0441\u044F")

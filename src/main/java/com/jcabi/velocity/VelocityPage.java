@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2012-2017, jcabi.com
+/*
+ * Copyright (c) 2012-2023, jcabi.com
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -32,7 +32,6 @@ package com.jcabi.velocity;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Map;
-import javax.validation.constraints.NotNull;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
@@ -53,12 +52,10 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
  *
  * <p>The class is mutable and thread-safe.
  *
- * @author Yegor Bugayenko (yegor@tpc2.com)
- * @version $Id$
- * @since 0.1.6
  * @see <a href="http://velocity.apache.org/engine/releases/velocity-1.7/user-guide.html">Velocity User Guide</a>
  * @see <a href="http://velocity.apache.org/engine/releases/velocity-1.7/developer-guide.html">Velocity Developer Guide</a>
  * @see <a href="http://velocity.apache.org/engine/devel/apidocs/org/apache/velocity/slf4j/Slf4jLogChute.html">Slf4jLogChute</a>
+ * @since 0.1.6
  */
 public final class VelocityPage {
 
@@ -75,15 +72,16 @@ public final class VelocityPage {
     /**
      * The context.
      */
-    private final transient VelocityContext context = new VelocityContext();
+    private final transient VelocityContext context;
 
     /**
      * Public ctor, with absolute resource name in classpath.
      * @param res Name of resource with template (absolute resource name in
      *  classpath)
      */
-    public VelocityPage(@NotNull final String res) {
+    public VelocityPage(final String res) {
         this.name = res;
+        this.context = new VelocityContext();
     }
 
     /**
@@ -92,7 +90,7 @@ public final class VelocityPage {
      * @param value The value to use
      * @return This object
      */
-    public VelocityPage set(@NotNull final String prop, final Object value) {
+    public VelocityPage set(final String prop, final Object value) {
         synchronized (this.context) {
             this.context.put(prop, value);
         }
@@ -105,7 +103,7 @@ public final class VelocityPage {
      * @return This object
      * @since 0.8
      */
-    public VelocityPage set(@NotNull final Map<String, Object> args) {
+    public VelocityPage set(final Map<String, Object> args) {
         synchronized (this.context) {
             for (final Map.Entry<String, Object> entry : args.entrySet()) {
                 this.context.put(entry.getKey(), entry.getValue());
@@ -114,9 +112,6 @@ public final class VelocityPage {
         return this;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public String toString() {
         final Template template =

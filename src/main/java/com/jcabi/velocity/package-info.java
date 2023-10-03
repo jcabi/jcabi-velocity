@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2012-2017, jcabi.com
+/*
+ * Copyright (c) 2012-2023, jcabi.com
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -34,14 +34,12 @@
  * <p>The only dependency you need is (check our latest version available
  * at <a href="http://www.jcabi.com">www.jcabi.com</a>):
  *
- * <pre>&lt;depedency&gt;
+ * <pre>&lt;dependency&gt;
  *   &lt;groupId&gt;com.jcabi&lt;/groupId&gt;
  *   &lt;artifactId&gt;jcabi-velocity&lt;/artifactId&gt;
  * &lt;/dependency&gt;</pre>
  *
- * @author Yegor Bugayenko (yegor@tpc2.com)
- * @version $Id$
- * @since 0.1.6
  * @see <a href="http://www.jcabi.com/jcabi-velocity">project website</a>
+ * @since 0.1.6
  */
 package com.jcabi.velocity;
