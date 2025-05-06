@@ -1,6 +1,6 @@
-*.iml
 .DS_Store
 .idea
 .idea/
+*.iml
 node_modules/
 target/
