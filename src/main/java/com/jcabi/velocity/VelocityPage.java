@@ -32,6 +32,7 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
  * @see <a href="http://velocity.apache.org/engine/devel/apidocs/org/apache/velocity/slf4j/Slf4jLogChute.html">Slf4jLogChute</a>
  * @since 0.1.6
  */
+@SuppressWarnings("PMD.AvoidSynchronizedStatement")
 public final class VelocityPage {
 
     /**
