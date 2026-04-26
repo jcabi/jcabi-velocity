@@ -119,5 +119,4 @@ public final class VelocityPage {
         engine.init();
         return engine;
     }
-
 }
