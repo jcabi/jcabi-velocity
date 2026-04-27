@@ -22,14 +22,12 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
  *   .set("name", "John Doe")
  *   .toString();</pre>
  *
- * <p>At the moment all logging is forwarded to LOG4J. In Velocity 2.0 there
- * will be an adapter for SLF4J and we'll use it: {@code Slf4jLogChute}.
+ * <p>Logging is forwarded to SLF4J by Apache Velocity 2.x.
  *
  * <p>The class is mutable and thread-safe.
  *
- * @see <a href="http://velocity.apache.org/engine/releases/velocity-1.7/user-guide.html">Velocity User Guide</a>
- * @see <a href="http://velocity.apache.org/engine/releases/velocity-1.7/developer-guide.html">Velocity Developer Guide</a>
- * @see <a href="http://velocity.apache.org/engine/devel/apidocs/org/apache/velocity/slf4j/Slf4jLogChute.html">Slf4jLogChute</a>
+ * @see <a href="https://velocity.apache.org/engine/2.4.1/user-guide.html">Velocity User Guide</a>
+ * @see <a href="https://velocity.apache.org/engine/2.4.1/developer-guide.html">Velocity Developer Guide</a>
  * @since 0.1.6
  */
 @SuppressWarnings("PMD.AvoidSynchronizedStatement")
@@ -103,18 +101,10 @@ public final class VelocityPage {
      */
     private static VelocityEngine init() {
         final VelocityEngine engine = new VelocityEngine();
-        engine.setProperty("resource.loader", "cp");
+        engine.setProperty(RuntimeConstants.RESOURCE_LOADERS, "cp");
         engine.setProperty(
-            "cp.resource.loader.class",
+            "resource.loader.cp.class",
             ClasspathResourceLoader.class.getName()
-        );
-        engine.setProperty(
-            RuntimeConstants.RUNTIME_LOG_LOGSYSTEM_CLASS,
-            "org.apache.velocity.runtime.log.Log4JLogChute"
-        );
-        engine.setProperty(
-            "runtime.log.logsystem.log4j.logger",
-            "org.apache.velocity"
         );
         engine.init();
         return engine;
