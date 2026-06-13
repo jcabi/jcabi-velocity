@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: Copyright (c) 2012-2025 Yegor Bugayenko
+ * SPDX-FileCopyrightText: Copyright (c) 2012-2026 Yegor Bugayenko
  * SPDX-License-Identifier: MIT
  */
 package com.jcabi.velocity;
@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Test case for {@link VelocityPage}.
- *
  * @since 0.0.1
  */
 final class VelocityPageTest {
@@ -26,5 +25,4 @@ final class VelocityPageTest {
             )
         );
     }
-
 }

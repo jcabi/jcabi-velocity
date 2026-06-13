@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- * SPDX-FileCopyrightText: Copyright (c) 2012-2025 Yegor Bugayenko
+ * SPDX-FileCopyrightText: Copyright (c) 2012-2026 Yegor Bugayenko
  * SPDX-License-Identifier: MIT
  *
  * Redistribution and use in source and binary forms, with or without
@@ -33,7 +33,7 @@
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>jcabi</artifactId>
-    <version>1.38.0</version>
+    <version>1.44.0</version>
   </parent>
   <artifactId>jcabi-velocity</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.36</version>
+      <version>1.18.46</version>
     </dependency>
     <dependency>
       <!--
@@ -65,14 +65,32 @@
             @see http://velocity.apache.org/
             -->
       <groupId>org.apache.velocity</groupId>
-      <artifactId>velocity</artifactId>
-      <version>1.7</version>
+      <artifactId>velocity-engine-core</artifactId>
+      <version>2.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.jcabi</groupId>
       <artifactId>jcabi-log</artifactId>
-      <version>0.24.3</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <profiles>
+    <profile>
+      <id>qulice</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.qulice</groupId>
+            <artifactId>qulice-maven-plugin</artifactId>
+            <version>0.27.6</version>
+            <configuration>
+              <excludes>
+                <exclude>duplicatefinder:.*</exclude>
+              </excludes>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
