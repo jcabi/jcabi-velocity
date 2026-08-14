@@ -18,10 +18,10 @@ final class VelocityPageTest {
     void formatsVelocityTemplate() {
         MatcherAssert.assertThat(
             new VelocityPage("com/jcabi/velocity/text.vm")
-                .set("xname", "\u0412\u0430\u0441\u044F")
+                .set("xname", "Вася")
                 .toString(),
             Matchers.containsString(
-                "\u043F\u0440\u0438\u0432\u0435\u0442, \u0412\u0430\u0441\u044F"
+                "привет, Вася"
             )
         );
     }
