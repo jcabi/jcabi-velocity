@@ -95,10 +95,6 @@ public final class VelocityPage {
         return writer.toString();
     }
 
-    /**
-     * Create and initialize Velocity engine.
-     * @return The engine to use
-     */
     private static VelocityEngine init() {
         final VelocityEngine engine = new VelocityEngine();
         engine.setProperty(RuntimeConstants.RESOURCE_LOADERS, "cp");
