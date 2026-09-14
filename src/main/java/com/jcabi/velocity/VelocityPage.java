@@ -16,15 +16,15 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 /**
  * Velocity page, builder/wrapper around Apache Velocity template.
  *
- * <p>The template should be in classpath:
+ * <p>The template should be in classpath:</p>
  *
  * <pre> String text = new VelocityPage("com/foo/my-template.vm")
  *   .set("name", "John Doe")
  *   .toString();</pre>
  *
- * <p>Logging is forwarded to SLF4J by Apache Velocity 2.x.
+ * <p>Logging is forwarded to SLF4J by Apache Velocity 2.x.</p>
  *
- * <p>The class is mutable and thread-safe.
+ * <p>The class is mutable and thread-safe.</p>
  *
  * @see <a href="https://velocity.apache.org/engine/2.4.1/user-guide.html">Velocity User Guide</a>
  * @see <a href="https://velocity.apache.org/engine/2.4.1/developer-guide.html">Velocity Developer Guide</a>
@@ -50,6 +50,7 @@ public final class VelocityPage {
 
     /**
      * Public ctor, with absolute resource name in classpath.
+     *
      * @param res Name of resource with template (absolute resource name in
      *  classpath)
      */
@@ -60,6 +61,7 @@ public final class VelocityPage {
 
     /**
      * Set the name to the value specified.
+     *
      * @param prop Name of the property to set
      * @param value The value to use
      * @return This object
@@ -73,6 +75,7 @@ public final class VelocityPage {
 
     /**
      * Set all names in one go.
+     *
      * @param args Map of arguments
      * @return This object
      * @since 0.8
@@ -91,7 +94,9 @@ public final class VelocityPage {
         final Template template =
             VelocityPage.ENGINE.getTemplate(this.name, "UTF-8");
         final StringWriter writer = new StringWriter();
-        template.merge(this.context, new PrintWriter(writer));
+        try (PrintWriter print = new PrintWriter(writer)) {
+            template.merge(this.context, print);
+        }
         return writer.toString();
     }
 
