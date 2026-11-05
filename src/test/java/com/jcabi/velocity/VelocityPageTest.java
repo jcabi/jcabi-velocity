@@ -26,4 +26,17 @@ final class VelocityPageTest {
             )
         );
     }
+
+    @Test
+    void locksContextWhileMerging() {
+        final VelocityPage page = new VelocityPage(
+            "com/jcabi/velocity/probe.vm"
+        );
+        page.set("probe", new VelocityProbe(page));
+        MatcherAssert.assertThat(
+            "Writer was not blocked during merge",
+            page.toString(),
+            Matchers.equalTo("true")
+        );
+    }
 }
