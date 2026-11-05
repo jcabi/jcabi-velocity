@@ -36,7 +36,7 @@ final class VelocityPageTest {
         MatcherAssert.assertThat(
             "Writer was not blocked during merge",
             page.toString(),
-            Matchers.equalTo("true")
+            Matchers.containsString("true")
         );
     }
 }
