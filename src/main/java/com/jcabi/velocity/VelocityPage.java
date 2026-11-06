@@ -95,7 +95,9 @@ public final class VelocityPage {
             VelocityPage.ENGINE.getTemplate(this.name, "UTF-8");
         final StringWriter writer = new StringWriter();
         try (PrintWriter print = new PrintWriter(writer)) {
-            template.merge(this.context, print);
+            synchronized (this.context) {
+                template.merge(this.context, print);
+            }
         }
         return writer.toString();
     }
